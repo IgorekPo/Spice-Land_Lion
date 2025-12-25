@@ -18,7 +18,7 @@
   font-style: normal;
    line-height: 1.2;
   color: #000;
-  font-size: calc(28px + 8 * (100vw / 1440));
+  font-size: calc(24px + 12 * (100vw / 1440));
   @media(max-width: 768px){
    font-size: calc(24px + (6 + 6 * 0.7 ) * ((100vw - 320px) / 1440));
   };
