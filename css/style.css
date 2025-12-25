@@ -236,7 +236,7 @@ main {
   left: 0;
   height: 2px;
   width: 100%;
-  background-color: #000;
+  background-color: #403536;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -248,7 +248,8 @@ main {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  background-color: #e11f21;
+  background: -webkit-gradient(linear, right top, left top, color-stop(27%, rgb(82, 71, 68)), color-stop(81%, rgba(255, 74, 74, 0.96)));
+  background: linear-gradient(270deg, rgb(82, 71, 68) 27%, rgba(255, 74, 74, 0.96) 81%);
 }
 .header__burger::after {
   bottom: 0;
@@ -258,7 +259,8 @@ main {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background-color: #e11f21;
+  background: -webkit-gradient(linear, left top, right top, color-stop(27%, rgb(82, 71, 68)), color-stop(81%, rgba(255, 74, 74, 0.96)));
+  background: linear-gradient(90deg, rgb(82, 71, 68) 27%, rgba(255, 74, 74, 0.96) 81%);
 }
 .header__burger span {
   top: 50%;
