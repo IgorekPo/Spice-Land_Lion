@@ -55,6 +55,7 @@
          top: -100vh;
          transition: all .5s ease;
          background: linear-gradient(187deg,rgba(255, 145, 0, 0.01) 21%, rgba(255, 177, 74, 0.96) 81%);
+         backdrop-filter: blur(3px);
          border-radius: 100% 0% 89% 11% / 0% 89% 11% 100% ;
          padding-top: 60px;
          z-index: 1;
