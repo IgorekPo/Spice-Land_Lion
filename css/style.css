@@ -637,6 +637,11 @@ main {
 .main__tittle {
   color: #fff;
 }
+@media (max-width: 705.98px) {
+  .main__tittle {
+    text-align: center;
+  }
+}
 .main__tittle span {
   color: #ff9100;
 }

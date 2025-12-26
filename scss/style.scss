@@ -429,6 +429,9 @@
    &__tittle {
       @extend %tittleText;
       color: #fff;
+      @media(max-width: 705.98px){
+         text-align: center;
+      }
       & span{
          color: #ff9100;
       }
