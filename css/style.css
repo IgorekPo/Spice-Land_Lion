@@ -461,7 +461,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 60px;
-  padding-top: 60px;
 }
 .factory__body {
   display: -webkit-box;
