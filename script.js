@@ -6,6 +6,14 @@ burgerMenu.addEventListener('click' , function(){
    headerMenu.classList.toggle ('active');
 })
 
+const menuLinks = document.querySelectorAll ('.header__link');
+
+menuLinks.forEach (link =>{
+   link.addEventListener('click',()=>{
+   burgerMenu.classList.remove ('active');
+   headerMenu.classList.remove ('active');
+   })
+})
 
 // form TEL
 

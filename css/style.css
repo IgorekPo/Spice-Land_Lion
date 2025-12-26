@@ -68,6 +68,10 @@ body {
   min-width: 320px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 input {
   outline: none;
 }
@@ -300,6 +304,9 @@ main {
   }
 }
 
+.hello {
+  scroll-margin-top: 100px;
+}
 @media (max-width: 721px) {
   .hello {
     padding-top: 150px;
@@ -448,6 +455,9 @@ main {
   }
 }
 
+.factory {
+  scroll-margin-top: 100px;
+}
 .factory__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,6 +528,7 @@ main {
   }
 }
 .advantages {
+  scroll-margin-top: 100px;
   padding-top: 40px;
   background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(253, 137, 2)), to(rgb(255, 121, 64)));
   background: linear-gradient(90deg, rgb(253, 137, 2) 22%, rgb(255, 121, 64) 100%);
@@ -592,6 +603,9 @@ main {
   }
 }
 
+.block-advantages {
+  scroll-margin-top: 100px;
+}
 .block-advantages__img {
   width: 72px;
   height: 72px;
@@ -620,6 +634,7 @@ main {
   background: url("../img/Lion.jpg") 0 0 no-repeat;
   background-position: center;
   background-size: cover;
+  scroll-margin-top: 100px;
 }
 .main__container {
   padding-top: 40px;
@@ -752,6 +767,7 @@ main {
 }
 
 .order {
+  scroll-margin-top: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(255, 204, 145)), to(rgb(255, 176, 143)));

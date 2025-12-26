@@ -156,6 +156,7 @@
 
 // ===================================================================================================================
 .hello {
+      scroll-margin-top: 100px;
    @media(max-width: 721px){
       padding-top: 150px;
    };
@@ -269,6 +270,7 @@
 
 // ===================================================================================================================
 .factory {
+      scroll-margin-top: 100px;
 
    &__container {
       display: flex;
@@ -336,6 +338,7 @@
 // ===================================================================================================================
 
 .advantages {
+      scroll-margin-top: 100px;
    padding-top: 40px;
    // background: linear-gradient(176deg, #fd8902 0%, #ff4e00 41%);
    background: linear-gradient(90deg,rgba(253, 137, 2, 1) 22%, rgba(255, 121, 64, 1) 100%);
@@ -383,7 +386,7 @@
    }
 }
 .block-advantages {
-
+      scroll-margin-top: 100px;
    &__img {
       width: 72px;
       height: 72px;
@@ -418,6 +421,7 @@
    background: url('../img/Lion.jpg') 0 0 no-repeat;
    background-position: center;
    background-size: cover;
+      scroll-margin-top: 100px;
    &__container {
       padding-top: 40px;
       padding-bottom: 40px;
@@ -516,6 +520,7 @@
 // ===================================================================================================================
 
 .order {
+      scroll-margin-top: 100px;
       padding-top: 60px;
       padding-bottom: 60px;
       background: linear-gradient(90deg,rgba(255, 204, 145, 1) 22%, rgba(255, 176, 143, 1) 100%);
