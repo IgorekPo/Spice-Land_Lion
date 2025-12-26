@@ -598,6 +598,8 @@ main {
   padding: 4px;
   border-radius: 15px;
   border: dashed 2px #000;
+  -webkit-box-shadow: 0 0 5px #000;
+          box-shadow: 0 0 5px #000;
 }
 .block-advantages__img img {
   width: 100%;
