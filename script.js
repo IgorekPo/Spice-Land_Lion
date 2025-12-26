@@ -15,6 +15,14 @@ menuLinks.forEach (link =>{
    })
 })
 
+document.addEventListener ('click' , (e)=>{
+   if (headerMenu.classList.contains ('active') && !headerMenu.contains(e.target) && !burgerMenu.contains(e.target)){
+         burgerMenu.classList.remove ('active');
+   headerMenu.classList.remove ('active');
+   }
+})
+
+
 // form TEL
 
 const phoneInput = document.getElementById ('phone');
