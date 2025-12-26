@@ -31,6 +31,12 @@
   color: #ff9100;
 }
 
+/* yelow */
+/* #ff9100 */
+/* grey */
+/* #f8f4e9 */
+/* red */
+/* #e11f21 */
 *,
 *::before,
 *::after {
@@ -116,12 +122,6 @@ main {
 }
 
 /* ======================================== */
-/* yelow */
-/* #ff9100 */
-/* grey */
-/* #f8f4e9 */
-/* red */
-/* #e11f21 */
 .header {
   position: fixed;
   top: 0;
@@ -519,7 +519,7 @@ main {
   }
 }
 .advantages {
-  padding-top: 60px;
+  padding-top: 40px;
   background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(253, 137, 2)), to(rgb(255, 121, 64)));
   background: linear-gradient(90deg, rgb(253, 137, 2) 22%, rgb(255, 121, 64) 100%);
 }
@@ -533,12 +533,11 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 40px;
+  gap: 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 .advantages__advantages {
