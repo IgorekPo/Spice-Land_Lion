@@ -1,4 +1,4 @@
-.header__links, .hello__text, .factory__text, .block-advantages__text, body {
+.header__links, .hello__text, .factory__text, .block-advantages__text, .information-main__text, body {
   font-family: "Roboto", sans-serif;
   color: #403536;
   line-height: 1.6;
@@ -8,12 +8,12 @@
   font-size: calc(12px + 0.2777777778vw);
 }
 @media (max-width: 768px) {
-  .header__links, .hello__text, .factory__text, .block-advantages__text, body {
+  .header__links, .hello__text, .factory__text, .block-advantages__text, .information-main__text, body {
     font-size: calc(12px + 3.4 * (100vw - 320px) / 1440);
   }
 }
 
-.hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle {
+.hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -22,7 +22,7 @@
   font-size: calc(24px + 0.8333333333vw);
 }
 @media (max-width: 768px) {
-  .hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle {
+  .hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle {
     font-size: calc(24px + 10.2 * (100vw - 320px) / 1440);
   }
 }
@@ -612,4 +612,127 @@ main {
 .block-advantages__text {
   color: #000;
   font-weight: 600;
+}
+
+.main {
+  background: url("../img/Lion.jpg") 0 0 no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.main__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__tittle {
+  color: #fff;
+}
+.main__tittle span {
+  color: #ff9100;
+}
+.main__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media (max-width: 705.98px) {
+  .main__blocks {
+    gap: 15px;
+  }
+}
+.main__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 29px;
+  background-color: #1b1b1b;
+  border-radius: 8px;
+}
+@media (max-width: 705.98px) {
+  .main__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (min-width: 706px) {
+  .main__block:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+.main__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(50% - 20px);
+          flex: 1 1 calc(50% - 20px);
+  -ms-flex-item-align: self-start;
+      align-self: self-start;
+}
+
+.information-main {
+  text-shadow: 0px 5px 15px #ff9100;
+}
+.information-main__tittle {
+  color: #fff;
+}
+@media (max-width: 705.98px) {
+  .information-main__tittle {
+    text-align: center;
+  }
+}
+.information-main__text {
+  color: #fff;
+}
+.information-main__img {
+  aspect-ratio: 330/208;
+  height: 208px;
+  border-radius: 8px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 15px #ff9100;
+          box-shadow: 0px 0px 15px #ff9100;
+}
+.information-main__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
