@@ -22,13 +22,6 @@ phoneInput.addEventListener ('blur', ()=>{
       phoneInput.value = ''
    }
 });
-phoneInput.addEventListener('keydown', (e) => {
-   if (phoneInput.selectionStart <= prefix.length) {
-         if (e.keyCode === 8 , e.keyCode === 46  (e.ctrlKey && e.keyCode === 88)) {
-      e.preventDefault();
-   }
-   }
-});
 phoneInput.addEventListener('input', (e) => {
    let value = phoneInput.value;
    if (!value.startsWith(prefix)) {
