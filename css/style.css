@@ -13,7 +13,7 @@
   }
 }
 
-.hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle {
+.hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle, .order__tittle {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -22,7 +22,7 @@
   font-size: calc(24px + 0.8333333333vw);
 }
 @media (max-width: 768px) {
-  .hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle {
+  .hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle, .order__tittle {
     font-size: calc(24px + 10.2 * (100vw - 320px) / 1440);
   }
 }
@@ -749,4 +749,48 @@ main {
     height: 100%;
     width: 100%;
   }
+}
+
+.order {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(255, 204, 145)), to(rgb(255, 176, 143)));
+  background: linear-gradient(90deg, rgb(255, 204, 145) 22%, rgb(255, 176, 143) 100%);
+}
+.order__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+.order__tittle {
+  text-align: center;
+}
+.order__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.order__input {
+  border: solid 1px #000;
+  border-radius: 20px;
+  padding: 5px 15px;
+  -webkit-box-shadow: 0 0 7px #000;
+          box-shadow: 0 0 7px #000;
 }
