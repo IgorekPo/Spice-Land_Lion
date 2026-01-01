@@ -832,7 +832,7 @@ main {
 }
 .faq__img {
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 0;
 }
 .faq__tittle {
