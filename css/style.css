@@ -835,6 +835,9 @@ main {
   top: 0;
   left: 0;
 }
+.faq__tittle {
+  z-index: 1;
+}
 .faq__blocks {
   display: -webkit-box;
   display: -ms-flexbox;
