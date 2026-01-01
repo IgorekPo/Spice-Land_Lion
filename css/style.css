@@ -1,4 +1,4 @@
-.header__links, .hello__text, .factory__text, .block-advantages__text, .information-main__text, body {
+.header__links, .hello__text, .factory__text, .block-advantages__text, .information-main__text, .faq__number, body {
   font-family: "Roboto", sans-serif;
   color: #403536;
   line-height: 1.6;
@@ -8,12 +8,12 @@
   font-size: calc(12px + 0.2777777778vw);
 }
 @media (max-width: 768px) {
-  .header__links, .hello__text, .factory__text, .block-advantages__text, .information-main__text, body {
+  .header__links, .hello__text, .factory__text, .block-advantages__text, .information-main__text, .faq__number, body {
     font-size: calc(12px + 3.4 * (100vw - 320px) / 1440);
   }
 }
 
-.hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle, .order__tittle {
+.hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle, .order__tittle, .faq__tittle {
   font-family: "Roboto", sans-serif;
   font-weight: 800;
   font-style: normal;
@@ -22,12 +22,12 @@
   font-size: calc(24px + 0.8333333333vw);
 }
 @media (max-width: 768px) {
-  .hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle, .order__tittle {
+  .hello__tittle, .factory__tittle, .factory__information, .advantages__advantages, .block-advantages__tittle, .main__tittle, .information-main__tittle, .order__tittle, .faq__tittle {
     font-size: calc(24px + 10.2 * (100vw - 320px) / 1440);
   }
 }
 
-.hello__tittle span, .factory__tittle span, .factory__information span {
+.hello__tittle span, .factory__tittle span, .factory__information span, .faq__tittle span {
   color: #ff9100;
 }
 
@@ -809,4 +809,107 @@ main {
   padding: 5px 15px;
   -webkit-box-shadow: 0 0 7px #000;
           box-shadow: 0 0 7px #000;
+}
+
+.faq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.faq__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+.faq__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+@media (max-width: 630px) {
+  .faq__blocks {
+    width: 100%;
+  }
+}
+.faq__block {
+  padding: 25px;
+  text-align: start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(196, 196, 196)), to(rgba(196, 196, 196, 0.09)));
+  background: linear-gradient(90deg, rgb(196, 196, 196) 22%, rgba(196, 196, 196, 0.09) 100%);
+  backdrop-filter: blur(2px);
+}
+@media (max-width: 424px) {
+  .faq__block {
+    padding: 15px;
+  }
+}
+.faq__number {
+  color: #ff9100;
+  font-weight: 800;
+}
+.faq__informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 60px;
+  padding-right: 20px;
+  gap: 20px;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 468px) {
+  .faq__informations {
+    padding-left: 20px;
+  }
+}
+.faq__informations::after {
+  content: "";
+  background: url(../img/plus.svg) 0 0 no-repeat;
+  position: absolute;
+  background-size: contain;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+}
+.faq__faq {
+  font-weight: 800;
+}
+.faq__answer {
+  width: 80%;
+  overflow: hidden;
+  height: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.faq__answer.active {
+  height: 100%;
 }
