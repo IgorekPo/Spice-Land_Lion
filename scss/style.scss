@@ -618,9 +618,18 @@
       border-radius: 10px;
       backdrop-filter: blur(2px);
       background-color: #dedede2a;
-      transition: all .5s ease;
       border: 2px solid #ffffff49;
+      &.active {
+         .faq__informations::after{
+         transform: rotate(45deg);
+         transition: all .6s ease-in;
 
+         }
+         .faq__answer{
+            max-height: 100px;
+            transition: max-height .6s ease-in;
+         }
+      }
       @media(max-width: 424px){
          padding: 15px;
       };
@@ -638,7 +647,6 @@
       gap: 20px;
       position: relative;
       width: 100%;
-      
       @media(max-width: 468px){
          padding-left: 20px;
       };
@@ -651,10 +659,7 @@
          right: 0;
          width: 20px;
          height: 20px;
-         transition: all .8s ease-in-out;
-      }
-      &.active::after{
-         transform: rotate(45deg);
+         transition: all .3s ease-out;
       }
    }
 
@@ -666,10 +671,13 @@
       width: 80%;
       overflow: hidden;
       max-height: 0;
-      transition: max-height .8s ease-in-out;
-      &.active{
-         max-height: 100px;
-      }
+      transition: max-height .3s ease-out;
+      @media(max-width: 768px){
+         width: 90%;
+      };
+      @media(max-width: 525px){
+         width: 100%;
+      };
    }
 }
 

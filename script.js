@@ -56,18 +56,12 @@ phoneInput.addEventListener('click', () => {
 
 // FAQ============================================
 const faqBlock = document.querySelectorAll ('.faq__block');
-const faqAnswer = document.querySelector ('.faq__answer');
-const faqPlus = document.querySelector ('.faq__informations');
-
-faqBlock.forEach (open =>{
-   open.addEventListener('click' , ()=>{
-   faqAnswer.classList.toggle ('active')
-   faqPlus.classList.toggle ('active')
+faqBlock.forEach(block =>{
+   block.addEventListener('click', function(){
+      const currentActive = document.querySelector('.faq__block.active');
+      if (currentActive) {
+      currentActive.classList.remove('active');
+    }
+      this.classList.add('active');
    })
 })
-
-// faqBlock.addEventListener('click', function(){
-//    faqAnswer.classList.toggle ('active')
-//    faqPlus.classList.toggle ('active')
-
-// })
