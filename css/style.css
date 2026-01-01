@@ -828,6 +828,12 @@ main {
           align-items: center;
   text-align: center;
   gap: 50px;
+  position: relative;
+}
+.faq__img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .faq__blocks {
   display: -webkit-box;
@@ -837,7 +843,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -858,9 +864,9 @@ main {
   cursor: pointer;
   overflow: hidden;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(196, 196, 196)), to(rgba(196, 196, 196, 0.09)));
-  background: linear-gradient(90deg, rgb(196, 196, 196) 22%, rgba(196, 196, 196, 0.09) 100%);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(8px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 @media (max-width: 424px) {
   .faq__block {
@@ -907,8 +913,8 @@ main {
   width: 80%;
   overflow: hidden;
   height: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 .faq__answer.active {
   height: 100%;
