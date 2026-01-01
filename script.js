@@ -55,9 +55,19 @@ phoneInput.addEventListener('click', () => {
 
 
 // FAQ============================================
-const faqBlock = document.querySelector ('.faq__block');
+const faqBlock = document.querySelectorAll ('.faq__block');
 const faqAnswer = document.querySelector ('.faq__answer');
+const faqPlus = document.querySelector ('.faq__informations');
 
-faqBlock.addEventListener('click', function(){
+faqBlock.forEach (open =>{
+   open.addEventListener('click' , ()=>{
    faqAnswer.classList.toggle ('active')
+   faqPlus.classList.toggle ('active')
+   })
 })
+
+// faqBlock.addEventListener('click', function(){
+//    faqAnswer.classList.toggle ('active')
+//    faqPlus.classList.toggle ('active')
+
+// })

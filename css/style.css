@@ -907,6 +907,13 @@ main {
   right: 0;
   width: 20px;
   height: 20px;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+.faq__informations.active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .faq__faq {
   font-weight: 800;

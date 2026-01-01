@@ -638,6 +638,10 @@
          right: 0;
          width: 20px;
          height: 20px;
+         transition: all .8s ease-in-out;
+      }
+      &.active::after{
+         transform: rotate(45deg);
       }
    }
 
