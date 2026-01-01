@@ -55,13 +55,18 @@ phoneInput.addEventListener('click', () => {
 
 
 // FAQ============================================
-const faqBlock = document.querySelectorAll ('.faq__block');
-faqBlock.forEach(block =>{
-   block.addEventListener('click', function(){
-      const currentActive = document.querySelector('.faq__block.active');
-      if (currentActive) {
+
+const faqBlock = document.querySelectorAll('.faq__block');
+
+faqBlock.forEach(block => {
+  block.addEventListener('click', function() {
+    const currentActive = document.querySelector('.faq__block.active');
+    if (currentActive) {
       currentActive.classList.remove('active');
+      if (currentActive === this) {
+        return;
+      }
     }
-      this.classList.add('active');
-   })
-})
+    this.classList.add('active');
+  });
+});

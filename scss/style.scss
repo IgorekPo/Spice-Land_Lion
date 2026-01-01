@@ -622,8 +622,8 @@
       &.active {
          .faq__informations::after{
          transform: rotate(45deg);
-         transition: all .6s ease-in;
-
+         transition: all .4s ease-in;
+         background-color: #e11f21;
          }
          .faq__answer{
             max-height: 100px;
@@ -660,6 +660,8 @@
          width: 20px;
          height: 20px;
          transition: all .3s ease-out;
+         filter: drop-shadow(rgb(0, 0, 0) 1px 1px 1px);
+         background-color: #ff9100;
       }
    }
 

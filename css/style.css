@@ -891,8 +891,9 @@ main {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-transition: all 0.6s ease-in;
-  transition: all 0.6s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  background-color: #e11f21;
 }
 .faq__block.active .faq__answer {
   max-height: 100px;
@@ -938,6 +939,9 @@ main {
   height: 20px;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+  -webkit-filter: drop-shadow(rgb(0, 0, 0) 1px 1px 1px);
+          filter: drop-shadow(rgb(0, 0, 0) 1px 1px 1px);
+  background-color: #ff9100;
 }
 .faq__faq {
   font-weight: 800;
