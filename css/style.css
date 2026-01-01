@@ -830,10 +830,26 @@ main {
   gap: 50px;
   position: relative;
 }
-.faq__img {
+.faq__img--one {
   position: absolute;
   top: 15%;
   left: 0;
+}
+.faq__img--two {
+  position: absolute;
+  bottom: 2%;
+  right: 0%;
+}
+@media (max-width: 630px) {
+  .faq__img--two {
+    right: -10%;
+  }
+}
+@media (max-width: 424.98px) {
+  .faq__img--two {
+    bottom: -2%;
+    right: -16%;
+  }
 }
 .faq__tittle {
   z-index: 1;

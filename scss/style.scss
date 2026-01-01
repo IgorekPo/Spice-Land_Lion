@@ -572,10 +572,22 @@
       position: relative;
       
    }
-   &__img{
+   &__img--one{
       position: absolute;
       top: 15%;
       left: 0;
+   }
+   &__img--two{
+      position: absolute;
+      bottom: 2%;
+      right: 0%;
+      @media(max-width: 630px){
+         right: -10%;
+      };
+      @media(max-width: 424.98px){
+         bottom: -2%;
+         right: -16%;
+      };
    }
    &__tittle {
       @extend %tittleText;
