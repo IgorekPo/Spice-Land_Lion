@@ -472,6 +472,11 @@ main {
           align-items: center;
   padding-bottom: 60px;
 }
+@media (max-width: 484.98px) {
+  .factory__container {
+    padding-top: 60px;
+  }
+}
 .factory__body {
   display: -webkit-box;
   display: -ms-flexbox;
