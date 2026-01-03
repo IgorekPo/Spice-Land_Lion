@@ -570,23 +570,32 @@
       text-align: center;
       gap: 50px;
       position: relative;
-      
    }
    &__img--one{
       position: absolute;
-      top: 15%;
-      left: 0;
+      top: 145px;
+      left: 35px;
+      @media(max-width: 630px){
+         top: 130px;
+         left: -50px;
+      };
+      @media(max-width: 424.98px){
+         top: 106px;
+      };
    }
    &__img--two{
       position: absolute;
-      bottom: 2%;
+      top: 538px;
       right: 0%;
+      @media(max-width: 768.98px){
+         right: -5%;
+         top: 520px;
+      };
       @media(max-width: 630px){
          right: -10%;
       };
       @media(max-width: 424.98px){
-         bottom: -2%;
-         right: -16%;
+         top: 435px;
       };
    }
    &__tittle {
