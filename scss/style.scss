@@ -155,25 +155,133 @@
 }
 
 // ===================================================================================================================
+// .hello {
+//       scroll-margin-top: 100px;
+//    @media(max-width: 721px){
+//       padding-top: 150px;
+//    };
+//    @media(max-width: 484.98px){
+//       padding-top: 0;
+//    };
+//    &__container {
+//       height: 100vh;
+//       display: flex;
+//       align-items: center;
+//       gap: 40px;
+//          @media(max-width: 721px){
+//          flex-direction: column;
+//       };
+//    }
+//    &__informations {
+//       flex: 1 1 auto;
+//       display: flex;
+//       flex-direction: column;
+//       gap: 40px;
+//       align-items: start;
+//       @media(max-width: 880px){
+//          gap: 20px;
+//       };
+//       @media(max-width: 721px){
+//          order: 2;
+//          padding-top: 140px;
+//         align-items: center;
+//         text-align: center;
+//       };
+//       @media(max-width: 484.98px){
+//          display: none;
+//       };
+//    }
+
+//    &__tittle {
+//       @extend %tittleText;
+//       & span{
+//          @extend %tittleSpan;
+//       }
+//    }
+
+//    &__text {
+//       @extend %mainText;
+//    }
+
+//    &__image {
+//       flex: 0 0 50%;
+//       aspect-ratio: 848 / 477;
+//       border-radius: 5px;
+//       box-shadow: 1px 1px 15px #000;
+//       position: relative;
+//       &::after{
+//       content: '';
+//       position: absolute;
+//       height: 180%;
+//       width: 600%;
+//       top: -30%;
+//       right: -542%;
+//       background: linear-gradient(180deg,rgba(255, 145, 0, 1) 29%, rgba(245, 217, 184, 1) 100%);
+//       border-radius: 70px;
+//       z-index: 1;
+//          @media(max-width: 721px){
+//             height: 140%;
+//             top: -15%;
+//          };
+//       }
+//       @media(max-width: 721px){
+//          order: 1;
+//          width: 100%;
+//          flex: 0 1 auto;
+//       };
+//       @media(max-width: 484.98px){
+//          display: none;
+//       };
+//       & img{
+//          width: 100%;
+//          height: 100%;
+//          object-fit: cover;
+//          position: absolute;
+//          z-index: 2;
+//          border-radius: 5px;
+//       }
+//    }
+//    &__video{
+//       display: none;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       &-background{
+//          position: absolute;
+//          top: 0;
+//          left: 0;
+//          width: 100%;
+//          height: 100%;
+//          z-index: 2;
+//          background-color: rgba(0, 0, 0, 0.2);
+//       }
+//       & video{
+//          width: 100%;
+//          height: 100%;
+//          object-fit: cover;
+//       }
+//       @media(max-width: 484.98px){
+//          display: block;
+//       };
+//    }
+// }
+
 .hello {
-      scroll-margin-top: 100px;
-   @media(max-width: 721px){
-      padding-top: 150px;
-   };
-   @media(max-width: 484.98px){
-      padding-top: 0;
-   };
+   height: 100vh;
+   scroll-margin-top: 100px;
+
    &__container {
-      height: 100vh;
+      padding-top: 95px;
       display: flex;
       align-items: center;
-      gap: 40px;
-         @media(max-width: 721px){
-         flex-direction: column;
-      };
+      gap: 10px;
+      height: 100%;
    }
+
    &__informations {
-      flex: 1 1 auto;
+      flex: 1 1 calc(55% - 30px);
       display: flex;
       flex-direction: column;
       gap: 40px;
@@ -182,8 +290,6 @@
          gap: 20px;
       };
       @media(max-width: 721px){
-         order: 2;
-         padding-top: 140px;
         align-items: center;
         text-align: center;
       };
@@ -203,74 +309,47 @@
       @extend %mainText;
    }
 
+
    &__image {
-      flex: 0 0 50%;
-      aspect-ratio: 848 / 477;
-      border-radius: 5px;
-      box-shadow: 1px 1px 15px #000;
-      position: relative;
-      &::after{
-      content: '';
-      position: absolute;
-      height: 180%;
-      width: 600%;
-      top: -30%;
-      right: -542%;
-      background: linear-gradient(180deg,rgba(255, 145, 0, 1) 29%, rgba(245, 217, 184, 1) 100%);
-      border-radius: 70px;
-      z-index: 1;
-         @media(max-width: 721px){
-            height: 140%;
-            top: -15%;
-         };
-      }
-      @media(max-width: 721px){
-         order: 1;
-         width: 100%;
-         flex: 0 1 auto;
-      };
-      @media(max-width: 484.98px){
+      flex: 1 0 calc(45% - 30px);
+         @media(max-width: 484.98px){
          display: none;
       };
-      & img{
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-         position: absolute;
-         z-index: 2;
-         border-radius: 5px;
-      }
    }
    &__video{
-      display: none;
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   &-background{
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      &-background{
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         z-index: 2;
-         background-color: rgba(0, 0, 0, 0.2);
-      }
-      & video{
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
-      }
-      @media(max-width: 484.98px){
-         display: block;
-      };
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.2);
    }
+   & video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+   @media(max-width: 484.98px){
+      display: block;
+   };
 }
+}
+
+
 
 // ===================================================================================================================
 .factory {
       scroll-margin-top: 100px;
+         padding-top: 60px;
+
 
    &__container {
       display: flex;
@@ -278,9 +357,6 @@
       gap: 40px;
       align-items: center;
       padding-bottom: 60px;
-      @media(max-width: 484.98px){
-         padding-top: 60px;
-      };
    }
 
    &__tittle {
@@ -629,8 +705,14 @@
       overflow: hidden;
       border-radius: 10px;
       backdrop-filter: blur(2px);
-      background-color: #dedede2a;
+      background-color: #cfcfcf2a;
       border: 2px solid #ffffff49;
+      transition: all .5s ease;
+      @media(hover: hover){
+         &:hover{
+          background-color: #9191912a;
+         }
+      };
       &.active {
          .faq__informations::after{
          transform: rotate(45deg);
@@ -802,7 +884,7 @@
 }
 .social-footer {
    &__link {
-      filter: drop-shadow(1px 1px 4px #fff);
+      filter: drop-shadow(1px 1px 4px #000);
       width: 44px;
       height: 44px;
       & img{
