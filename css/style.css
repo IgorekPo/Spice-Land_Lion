@@ -710,6 +710,7 @@ main {
   scroll-margin-top: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
 }
 .order__container {
   display: -webkit-box;
@@ -723,9 +724,14 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
+  z-index: 2;
 }
 .order__tittle {
   text-align: center;
+  z-index: 2;
+}
+.order__body {
+  z-index: 2;
 }
 .order__form {
   display: -webkit-box;
@@ -747,6 +753,16 @@ main {
   padding: 5px 15px;
   -webkit-box-shadow: 0 0 7px #000;
           box-shadow: 0 0 7px #000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.order__input:focus {
+  -webkit-box-shadow: 0 0 7px 5px #7a965b;
+          box-shadow: 0 0 7px 5px #7a965b;
+}
+.order__input._error {
+  -webkit-box-shadow: 0 0 7px 5px red;
+          box-shadow: 0 0 7px 5px red;
 }
 .order__submit {
   cursor: pointer;
@@ -755,19 +771,21 @@ main {
   padding: 8px 24px;
   -webkit-box-shadow: 0 0 7px #000;
           box-shadow: 0 0 7px #000;
-  background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(253, 137, 2)), to(rgb(255, 121, 64)));
-  background: linear-gradient(90deg, rgb(253, 137, 2) 22%, rgb(255, 121, 64) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(92, 92, 92)), to(rgb(77, 77, 77)));
+  background: linear-gradient(90deg, rgb(92, 92, 92) 22%, rgb(77, 77, 77) 100%);
   color: #fff;
   font-size: 16px;
   font-weight: 600;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transition: all 0.8s ease-in-out;
-  transition: all 0.8s ease-in-out;
+  pointer-events: none;
+  opacity: 0.5;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 .order__submit.active {
+  pointer-events: all;
   opacity: 1;
-  visibility: visible;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, rgb(253, 137, 2)), to(rgb(255, 121, 64)));
+  background: linear-gradient(90deg, rgb(253, 137, 2) 22%, rgb(255, 121, 64) 100%);
 }
 
 .faq {

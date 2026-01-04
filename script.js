@@ -42,6 +42,16 @@ inputs.forEach(input => {
     input.addEventListener('input', checkInputs);
 });
 
+
+function formValidate(form) {
+    let error = 0;
+    let formReq = document.querySelectorAll('._req');
+    for (let index = 0; index < formReq.length; index++) {
+      const input = formReq[index];
+      formRemoveError(input);
+    }
+  }
+
 // ==============================================
 
 
