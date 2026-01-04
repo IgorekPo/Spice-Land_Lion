@@ -307,6 +307,7 @@ main {
 .hello {
   height: 100vh;
   scroll-margin-top: 100px;
+  background-color: #FDFDFD;
 }
 .hello__container {
   padding-top: 95px;
