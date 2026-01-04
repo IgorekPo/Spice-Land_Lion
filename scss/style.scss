@@ -490,7 +490,6 @@
       scroll-margin-top: 100px;
       padding-top: 60px;
       padding-bottom: 60px;
-      background: linear-gradient(90deg,rgba(255, 204, 145, 1) 22%, rgba(255, 176, 143, 1) 100%);
       
    &__container {
       display: flex;
@@ -521,7 +520,24 @@
       border-radius: 20px;
       padding: 5px 15px;
       box-shadow: 0 0 7px #000;
-      
+   }
+   &__submit{
+      cursor: pointer;
+      border: solid 1px #000;
+      border-radius: 20px;
+      padding: 8px 24px;
+      box-shadow: 0 0 7px #000;
+      background: linear-gradient(90deg, rgb(253, 137, 2) 22%, rgb(255, 121, 64) 100%);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      opacity: 0;
+      visibility: hidden;
+      transition: all .8s ease-in-out;
+      &.active{
+         opacity: 1;
+         visibility: visible;
+      }
    }
 }
 

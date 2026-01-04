@@ -23,6 +23,28 @@ document.addEventListener ('click' , (e)=>{
 })
 
 
+// ============INPUT==================================
+
+
+const inputs = document.querySelectorAll('.order__input');
+const submitBtn = document.querySelector('.order__submit');
+
+function checkInputs() {
+    const allFilled = Array.from(inputs).every(input => input.value.trim().length > 0);
+
+    if (allFilled) {
+        submitBtn.classList.add('active');
+    } else {
+        submitBtn.classList.remove('active');
+    }
+}
+inputs.forEach(input => {
+    input.addEventListener('input', checkInputs);
+});
+
+// ==============================================
+
+
 // form TEL
 
 const phoneInput = document.getElementById ('phone');
