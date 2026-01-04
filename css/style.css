@@ -710,7 +710,6 @@ main {
   scroll-margin-top: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
-  position: relative;
 }
 .order__container {
   display: -webkit-box;
@@ -724,14 +723,9 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 40px;
-  z-index: 2;
 }
 .order__tittle {
   text-align: center;
-  z-index: 2;
-}
-.order__body {
-  z-index: 2;
 }
 .order__form {
   display: -webkit-box;
