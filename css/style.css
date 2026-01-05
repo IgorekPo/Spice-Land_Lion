@@ -821,6 +821,8 @@ main {
   position: absolute;
   top: 538px;
   right: 0%;
+  width: 288px;
+  height: 175px;
 }
 @media (max-width: 768.98px) {
   .faq__img--two {
