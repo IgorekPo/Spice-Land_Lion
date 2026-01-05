@@ -710,6 +710,7 @@ main {
   scroll-margin-top: 100px;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ff9100;
 }
 .order__container {
   display: -webkit-box;
@@ -961,7 +962,7 @@ main {
 }
 
 .footer {
-  background-color: #d17600;
+  background-color: #ff9100;
   font-weight: 600;
 }
 .footer__container {
